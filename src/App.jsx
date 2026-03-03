@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, useInView, useMotionValue, useSpring, AnimatePresence } from "framer-motion";
 import LiquidEther from "./components/LiquidEther/LiquidEther";
+const BASE = import.meta.env.BASE_URL;
 const C = {
   orchid1:"#C8A2C8", orchid2:"#B284BE", periwinkle:"#A2ADD0",
   cream:"#ECEBBD", peach:"#F8B878",
@@ -146,7 +147,7 @@ function SectionBadge({ text, color = C.peach }) {
 function Logo({ size = 36, showText = true }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-      <img src="/images/logo.png" alt="Neurova" style={{ width: size, height: size, objectFit: "contain", flexShrink: 0 }} />
+      <img src={`${BASE}images/logo.png`} alt="Neurova" style={{ width: size, height: size, objectFit: "contain", flexShrink: 0 }} />
       {showText && <span style={{ color: C.white, fontWeight: 800, fontSize: size * 0.5, letterSpacing: "-0.5px" }}>Neurova</span>}
     </div>
   );
@@ -269,7 +270,7 @@ function Hero() {
       </AnimatedContent> <AnimatedContent delay={1.05} direction="vertical" distance={70} style={{ marginTop: 80, position: "relative", zIndex: 1 }}>
         <motion.div animate={{ y: [0, -12, 0] }} transition={{ repeat: Infinity, duration: 5.5, ease: "easeInOut" }}>
           <div style={{ width: 280, aspectRatio: "402/874", borderRadius: 42, overflow: "hidden", background: `linear-gradient(145deg,${C.darkMid},${C.dark})`, border: `1.5px solid ${C.darkBorder}`, boxShadow: "0 40px 80px rgba(0,0,0,.65),0 0 80px rgba(178,132,190,.12)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-            <img src="/images/screens/Onboarding_1.png" alt="Neurova hero" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src={`${BASE}images/screens/Onboarding_1.png`} alt="Neurova hero" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             <div style={{ position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)", width: 95, height: 24, background: C.dark, borderRadius: "0 0 16px 16px" }} />
             <div style={{ position: "absolute", bottom: 10, left: "50%", transform: "translateX(-50%)", width: 95, height: 4, background: "rgba(245,240,255,.1)", borderRadius: 4 }} />
           </div>
@@ -420,7 +421,7 @@ function Screens() {
       <div style={{ display: "flex", flexWrap: "wrap", gap: 24, justifyContent: "center", maxWidth: 1400, margin: "0 auto" }}>
         {SCREEN_DATA.map((s, i) => (
           <PhoneFrame key={s.label} label={s.label} active={active === i} onClick={() => setActive(i)} animDelay={i * .055} width={220}>
-            <img src={`/images/screens/${encodeURIComponent(s.file)}`} alt={s.label} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src={`${BASE}images/screens/${encodeURIComponent(s.file)}`} alt={s.label} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </PhoneFrame>
         ))}
       </div>
