@@ -268,10 +268,10 @@ function Hero() {
         </div>
       </AnimatedContent> <AnimatedContent delay={1.05} direction="vertical" distance={70} style={{ marginTop: 80, position: "relative", zIndex: 1 }}>
         <motion.div animate={{ y: [0, -12, 0] }} transition={{ repeat: Infinity, duration: 5.5, ease: "easeInOut" }}>
-          <div style={{ width: 300, aspectRatio: "9/19.5", borderRadius: 46, overflow: "hidden", background: `linear-gradient(145deg,${C.darkMid},${C.dark})`, border: `1.5px solid ${C.darkBorder}`, boxShadow: "0 40px 80px rgba(0,0,0,.65),0 0 80px rgba(178,132,190,.12)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+          <div style={{ width: 280, aspectRatio: "402/874", borderRadius: 42, overflow: "hidden", background: `linear-gradient(145deg,${C.darkMid},${C.dark})`, border: `1.5px solid ${C.darkBorder}`, boxShadow: "0 40px 80px rgba(0,0,0,.65),0 0 80px rgba(178,132,190,.12)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
             <img src="/images/screens/Onboarding_1.png" alt="Neurova hero" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-            <div style={{ position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)", width: 100, height: 26, background: C.dark, borderRadius: "0 0 18px 18px" }} />
-            <div style={{ position: "absolute", bottom: 12, left: "50%", transform: "translateX(-50%)", width: 100, height: 4, background: "rgba(245,240,255,.1)", borderRadius: 4 }} />
+            <div style={{ position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)", width: 95, height: 24, background: C.dark, borderRadius: "0 0 16px 16px" }} />
+            <div style={{ position: "absolute", bottom: 10, left: "50%", transform: "translateX(-50%)", width: 95, height: 4, background: "rgba(245,240,255,.1)", borderRadius: 4 }} />
           </div>
           <div style={{ position: "absolute", bottom: -28, left: "50%", transform: "translateX(-50%)", width: 200, height: 28, background: "radial-gradient(ellipse,rgba(178,132,190,.45),transparent)", filter: "blur(14px)" }} />
         </motion.div>
