@@ -10,11 +10,11 @@
 
 Neurova is a beautifully designed landing page for an AI-powered student productivity app featuring:
 
-- **LiquidEther WebGL background** — interactive fluid simulation (ReactBits)
-- **Framer Motion animations** — blur text reveals, tilt cards, scroll effects, click sparks
-- **10 app screen showcases** — onboarding, auth, and confirmation flows
-- **Design system section** — color tokens, typography scale
-- **Coming Soon section** — with notify CTA
+- **LiquidEther WebGL background** -> interactive fluid simulation (ReactBits)
+- **Framer Motion animations** -> blur text reveals, tilt cards, scroll effects, click sparks
+- **10 app screen showcases** -> onboarding, auth, and confirmation flows
+- **Design system section** -> color tokens, typography scale
+- **Coming Soon section** -> with notify CTA
 - **Fully responsive** dark theme with the Candy Orchid Twist palette
 
 ## Tech Stack
